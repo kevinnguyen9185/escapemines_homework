@@ -6,8 +6,6 @@ namespace Application.SequenceProcessor.Interfaces
 {
     public interface IProcessSequence
     {
-        CheckResult CheckPosition(Position currentPosition);
-
-        Position Move(MoveBehaviorEnum currentBehavior, DirectionEnum currentDirection, Point currentPosition);
+        ResultEnum ProcessGameSequences();
     }
 }

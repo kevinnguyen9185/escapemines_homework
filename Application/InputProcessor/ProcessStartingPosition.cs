@@ -23,7 +23,7 @@ namespace Application.InputProcessor
             {
                 return new Position
                 {
-                    CurrentCoordination = new Point
+                    CurrentPosition = new Point
                     {
                         X = int.Parse(items[0]).ToPositiveInteger(),
                         Y = int.Parse(items[1]).ToPositiveInteger()

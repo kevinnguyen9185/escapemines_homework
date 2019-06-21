@@ -22,8 +22,8 @@ namespace Application.UnitTests.InputProcessor
             //Act
             var result = _processStartingPosition.Process();
             //Assert
-            Assert.Equal(0, result.CurrentCoordination.X);
-            Assert.Equal(1, result.CurrentCoordination.Y);
+            Assert.Equal(0, result.CurrentPosition.X);
+            Assert.Equal(1, result.CurrentPosition.Y);
             Assert.Equal(DirectionEnum.North, result.Direction);
         }
         

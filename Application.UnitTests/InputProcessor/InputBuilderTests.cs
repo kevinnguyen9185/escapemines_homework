@@ -47,7 +47,7 @@ namespace Application.UnitTests.InputProcessor
             Assert.Equal(4, gameSetting.BoardSize.Height);
             Assert.Equal(3, gameSetting.MinePositions.Count);
             Assert.Equal(new Point(4, 2), gameSetting.ExitPoint);
-            Assert.Equal(new Point(0, 1), gameSetting.StartingPosition.CurrentCoordination);
+            Assert.Equal(new Point(0, 1), gameSetting.StartingPosition.CurrentPosition);
             Assert.Equal(DirectionEnum.North, gameSetting.StartingPosition.Direction);
             Assert.Equal(2, gameSetting.Sequences.Count);
         }

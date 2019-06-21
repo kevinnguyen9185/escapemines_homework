@@ -11,8 +11,8 @@ namespace Application.UnitTests.InputProcessor
         private ProcessSequenceMove _processSequenceMove;
 
         [Theory]
-        [InlineData("R L N S W E M")]
-        [InlineData("R L N")]
+        [InlineData("R L M")]
+        [InlineData("M")]
         public void Process_ShouldReturnCorrectMove(string line)
         {
             //Arrange

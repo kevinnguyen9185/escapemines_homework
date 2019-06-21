@@ -1,3 +1,4 @@
+using System.IO;
 using Application.InputProcessor.Models;
 
 namespace Application.Utilities
@@ -18,9 +19,13 @@ namespace Application.Utilities
                     return MoveBehaviorEnum.East;
                 case "M":
                     return MoveBehaviorEnum.Move;
+                case "L":
+                    return MoveBehaviorEnum.Left;
+                case "R":
+                    return MoveBehaviorEnum.Right;
             }
 
-            return MoveBehaviorEnum.Move;
+            throw new InvalidDataException("Behavior not in the list");
         }
     }
 }

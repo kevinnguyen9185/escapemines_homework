@@ -1,32 +1,30 @@
 using System;
-using System.ComponentModel;
 using System.Drawing;
-using System.IO;
 using Application.InputProcessor.Interfaces;
+using Application.InputProcessor.Models;
 using Application.Utilities;
-using Core;
 
 namespace Application.InputProcessor
 {
     /// <summary>
     /// X-columns, Y-rows
     /// </summary>
-    public class ProcessBroadSize:BaseProcessLine, IProcessLine<Point>
+    public class ProcessBroadSize:BaseProcessLine, IProcessLine<BoardSize>
     {   
         public ProcessBroadSize(string line) : base(line)
         {
             _line = line;
         }
-        public Point Process()
+        public BoardSize Process()
         {
             var items = _line.Split(' ');
 
             if (items.Length == 2)
             {
-                return new Point
+                return new BoardSize
                 {
-                    X = int.Parse(items[0]).ToPositiveInteger(),
-                    Y = int.Parse(items[1]).ToPositiveInteger(),
+                    Width = int.Parse(items[0]).ToPositiveInteger(),
+                    Height = int.Parse(items[1]).ToPositiveInteger(),
                 };
             }
 

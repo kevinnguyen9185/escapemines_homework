@@ -31,18 +31,6 @@ namespace Application.UnitTests.InputProcessor
                     case "L":
                         Assert.Equal(MoveBehaviorEnum.Left, result[i]);
                         break;
-                    case "N":
-                        Assert.Equal(MoveBehaviorEnum.North, result[i]);
-                        break;
-                    case "E":
-                        Assert.Equal(MoveBehaviorEnum.East, result[i]);
-                        break;
-                    case "W":
-                        Assert.Equal(MoveBehaviorEnum.West, result[i]);
-                        break;
-                    case "S":
-                        Assert.Equal(MoveBehaviorEnum.South, result[i]);
-                        break;
                     case "M":
                         Assert.Equal(MoveBehaviorEnum.Move, result[i]);
                         break;

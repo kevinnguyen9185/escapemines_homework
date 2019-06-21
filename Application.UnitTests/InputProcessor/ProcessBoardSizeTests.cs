@@ -20,8 +20,8 @@ namespace Application.UnitTests.InputProcessor
             //Act
             var result = _processBroadSize.Process();
             //Assert
-            Assert.Equal(4, result.X);
-            Assert.Equal(5, result.Y);
+            Assert.Equal(4, result.Width);
+            Assert.Equal(5, result.Height);
         }
         
         [Fact]

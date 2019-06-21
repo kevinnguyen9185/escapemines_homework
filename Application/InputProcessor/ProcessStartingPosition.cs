@@ -28,7 +28,7 @@ namespace Application.InputProcessor
                         X = int.Parse(items[0]).ToPositiveInteger(),
                         Y = int.Parse(items[1]).ToPositiveInteger()
                     },
-                    MoveBehaviorEnum = items[2].ToMoveBehaviorEnum()
+                    Direction = items[2].ToDirectionEnum()
                 };
             }
 

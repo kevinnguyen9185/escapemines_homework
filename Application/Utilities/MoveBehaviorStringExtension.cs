@@ -9,14 +9,6 @@ namespace Application.Utilities
         {
             switch (behavior)
             {
-                case "N":
-                    return MoveBehaviorEnum.North;
-                case "S":
-                    return MoveBehaviorEnum.South;
-                case "W":
-                    return MoveBehaviorEnum.West;
-                case "E":
-                    return MoveBehaviorEnum.East;
                 case "M":
                     return MoveBehaviorEnum.Move;
                 case "L":

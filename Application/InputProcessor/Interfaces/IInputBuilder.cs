@@ -5,11 +5,11 @@ namespace Application.InputProcessor.Interfaces
     public interface IInputBuilder
     {
         GameSetting Build();
-        void ReadText(string textFilePath);
-        void ReadBoardSize();
-        void ReadMinePosition();
-        void ReadExitPoint();
-        void ReadStartingPosition();
-        void ReadSequences();
+        IInputBuilder ReadText(string textFilePath);
+        IInputBuilder ReadBoardSize();
+        IInputBuilder ReadMinePosition();
+        IInputBuilder ReadExitPoint();
+        IInputBuilder ReadStartingPosition();
+        IInputBuilder ReadSequences();
     }
 }

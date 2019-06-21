@@ -4,10 +4,6 @@ namespace Application.InputProcessor.Models
     {
         Right,
         Left,
-        North,
-        South,
-        West,
-        East,
         Move
     }
 }

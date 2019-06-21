@@ -5,11 +5,11 @@ namespace Application.InputProcessor.Models
 {
     public class GameSetting
     {
-        public Point? BoardSize { get; set; }
+        public BoardSize BoardSize { get; set; }
 
         public List<Point> MinePositions { get; set; }
 
-        public Point? ExitPoint { get; set; }
+        public Point ExitPoint { get; set; }
 
         public Position StartingPosition { get; set; }
 

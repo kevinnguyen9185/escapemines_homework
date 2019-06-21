@@ -24,7 +24,7 @@ namespace Application.UnitTests.InputProcessor
             //Assert
             Assert.Equal(0, result.CurrentCoordination.X);
             Assert.Equal(1, result.CurrentCoordination.Y);
-            Assert.Equal(MoveBehaviorEnum.North, result.MoveBehaviorEnum);
+            Assert.Equal(DirectionEnum.North, result.Direction);
         }
         
         [Fact]

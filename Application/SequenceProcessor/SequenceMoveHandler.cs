@@ -28,14 +28,8 @@ namespace Application.SequenceProcessor
             {
                 return ResultEnum.Success;
             }
-            
-            //If nothing match and lastMoveCheck
-            if (lastMoveCheck)
-            {
-                
-            }
 
-            return ResultEnum.Safe;
+            return ResultEnum.Danger;
         }
 
         public Position Move(MoveBehaviorEnum currentBehavior, DirectionEnum currentDirection, Point currentPosition)

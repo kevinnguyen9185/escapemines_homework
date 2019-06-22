@@ -4,7 +4,6 @@ namespace Application.SequenceProcessor.Models
     {
         Success,
         MineHit,
-        Danger,
-        Safe
+        Danger
     }
 }

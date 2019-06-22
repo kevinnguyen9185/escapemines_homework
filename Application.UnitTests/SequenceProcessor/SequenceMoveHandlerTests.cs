@@ -34,7 +34,7 @@ namespace Application.UnitTests.SequenceProcessor
                 BoardSize = new BoardSize
                 {
                     Width = 5,
-                    Height = 4
+                    Height = 5
                 }
             };
             var sequenceMoveHandler = new SequenceMoveHandler(gameSetting);

@@ -1,4 +1,4 @@
-using Core;
+using Check = Application.Utilities.Check;
 
 namespace Application.InputProcessor
 {

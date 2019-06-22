@@ -1,9 +1,7 @@
 using System;
 using System.Drawing;
-using System.IO;
 using Application.InputProcessor.Interfaces;
 using Application.Utilities;
-using Core;
 
 namespace Application.InputProcessor
 {

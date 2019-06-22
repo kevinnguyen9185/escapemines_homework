@@ -1,9 +1,7 @@
 using System;
 using System.Drawing;
-using System.IO;
 using Application.InputProcessor.Interfaces;
 using Application.InputProcessor.Models;
-using Core;
 using Application.Utilities;
 
 namespace Application.InputProcessor

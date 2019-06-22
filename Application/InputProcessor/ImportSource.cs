@@ -1,6 +1,6 @@
 using System.IO;
 using Application.InputProcessor.Interfaces;
-using Core;
+using Check = Application.Utilities.Check;
 
 namespace Application.InputProcessor
 {

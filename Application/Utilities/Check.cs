@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core
+namespace Application.Utilities
 {
     public static class Check
     {

@@ -9,12 +9,12 @@ namespace Application.InputProcessor
     {
         public ProcessExitPoint(string line) : base(line)
         {
-            _line = line;
+            Line = line;
         }
 
         public Point Process()
         {
-            var items = _line.Split(' ');
+            var items = Line.Split(' ');
 
             if (items.Length == 2)
             {

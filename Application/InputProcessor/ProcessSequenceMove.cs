@@ -9,12 +9,12 @@ namespace Application.InputProcessor
     {
         public ProcessSequenceMove(string line) : base(line)
         {
-            _line = line;
+            Line = line;
         }
         
         public IEnumerable<MoveBehaviorEnum> Process()
         {
-            var items = _line.Split(' ');
+            var items = Line.Split(' ');
 
             foreach (var item in items)
             {

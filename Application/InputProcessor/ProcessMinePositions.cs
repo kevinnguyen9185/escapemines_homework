@@ -10,12 +10,12 @@ namespace Application.InputProcessor
     {
         public ProcessMinePositions(string line) : base(line)
         {
-            _line = line;
+            Line = line;
         }
         
         public IEnumerable<Point> Process()
         {
-            var minePositions = _line.Split(' ').ToList();
+            var minePositions = Line.Split(' ').ToList();
 
             foreach (var minePosition in minePositions)
             {

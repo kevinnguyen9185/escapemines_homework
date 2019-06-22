@@ -10,12 +10,12 @@ namespace Application.InputProcessor
     {
         public ProcessStartingPosition(string line) : base(line)
         {
-            _line = line;
+            Line = line;
         }
         
         public Position Process()
         {
-            var items = _line.Split(' ');
+            var items = Line.Split(' ');
 
             if (items.Length == 3)
             {

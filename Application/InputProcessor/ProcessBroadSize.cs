@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using Application.InputProcessor.Interfaces;
 using Application.InputProcessor.Models;
 using Application.Utilities;
@@ -13,11 +12,11 @@ namespace Application.InputProcessor
     {   
         public ProcessBroadSize(string line) : base(line)
         {
-            _line = line;
+            Line = line;
         }
         public BoardSize Process()
         {
-            var items = _line.Split(' ');
+            var items = Line.Split(' ');
 
             if (items.Length == 2)
             {

@@ -1,11 +1,7 @@
-using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Xml.Linq;
 using Application.InputProcessor.Models;
 using Application.SequenceProcessor.Interfaces;
 using Application.SequenceProcessor.Models;
-using Application.Utilities;
 
 namespace Application.SequenceProcessor
 {

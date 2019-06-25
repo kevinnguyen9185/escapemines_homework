@@ -1,8 +1,6 @@
 using System;
-using System.IO;
 using Application.InputProcessor;
 using Xunit;
-using Xunit.Sdk;
 
 namespace Application.UnitTests.InputProcessor
 {
@@ -15,7 +13,7 @@ namespace Application.UnitTests.InputProcessor
         public void Process_ShouldReturnSize()
         {
             //Arrange
-            _line = "4 5";
+            _line = "5 4";
             _processBroadSize = new ProcessBroadSize(_line);
             //Act
             var result = _processBroadSize.Process();

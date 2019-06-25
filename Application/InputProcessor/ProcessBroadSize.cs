@@ -22,8 +22,8 @@ namespace Application.InputProcessor
             {
                 return new BoardSize
                 {
-                    Width = int.Parse(items[0]).ToPositiveInteger(),
-                    Height = int.Parse(items[1]).ToPositiveInteger(),
+                    Height = int.Parse(items[0]).ToPositiveInteger(),
+                    Width = int.Parse(items[1]).ToPositiveInteger(),
                 };
             }
 

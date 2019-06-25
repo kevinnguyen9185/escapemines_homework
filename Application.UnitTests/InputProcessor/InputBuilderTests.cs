@@ -43,8 +43,8 @@ namespace Application.UnitTests.InputProcessor
                     .ReadSequences()
                     .Build();
             //Assert
-            Assert.Equal(5, gameSetting.BoardSize.Width);
-            Assert.Equal(4, gameSetting.BoardSize.Height);
+            Assert.Equal(4, gameSetting.BoardSize.Width);
+            Assert.Equal(5, gameSetting.BoardSize.Height);
             Assert.Equal(3, gameSetting.MinePositions.Count);
             Assert.Equal(new Point(4, 2), gameSetting.ExitPoint);
             Assert.Equal(new Point(0, 1), gameSetting.StartingPosition.CurrentPosition);

@@ -29,12 +29,11 @@ namespace Application.UnitTests.SequenceProcessor
         }
         
         [Theory]
-        [InlineData("M M", ResultEnum.MineHit)]
-        [InlineData("L M R M M R M", ResultEnum.MineHit)]
-        [InlineData("R M M L M M M", ResultEnum.MineHit)]
-        [InlineData("R M M M M M M M L M M M L M", ResultEnum.MineHit)]
-        [InlineData("R M M M M M M M L M M M M M M L M M M M M", ResultEnum.Success)]
-        [InlineData("L M M M M", ResultEnum.Danger)]
+        [InlineData("R M M", ResultEnum.MineHit)]
+        [InlineData("L L M L M M L M", ResultEnum.MineHit)]
+        [InlineData("L L M L M M M L M M M", ResultEnum.MineHit)]
+        [InlineData("L L M L M M M M L M", ResultEnum.Success)]
+        [InlineData("M M M M", ResultEnum.Danger)]
         public void ProcessGameSequences_ShouldReturnCorrectResult(string sequence, ResultEnum expectedResult)
         {
             //Arrange
@@ -59,7 +58,7 @@ namespace Application.UnitTests.SequenceProcessor
         public void ProcessGameSequences_ShouldReturnExactNumberOfSequences()
         {
             //Arrange
-            var sequence = "L M R M M R M";
+            var sequence = "L L M L M M M L M M M";
             var sequences = new List<MoveBehaviorEnum>();
             foreach (var step in sequence.Split(' '))
             {

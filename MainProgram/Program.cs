@@ -7,6 +7,9 @@ using Application.Utilities;
 
 namespace MainProgram
 {
+    /// <summary>
+    /// This is main program
+    /// </summary>
     internal static class Program
     {
         private static IImportSource _importSource;

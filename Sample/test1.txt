@@ -4,3 +4,7 @@
 0 1 N
 R M L M M
 R M M M
+L L M
+R R M
+R M R M M M M M M M
+R M M R M
